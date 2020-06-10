@@ -5,7 +5,7 @@ This contains instructions for cloing the TIMPlus RI projects and building all c
 
 The following tools are needed to perform the full build
 
-* Maven
+* jq
 * Git
 * JDK 8
 
@@ -20,6 +20,10 @@ If you want to build from the developement branch, specify that branch using the
 `curl -s https://api.github.com/orgs/DirectStandards/repos?per_page=200 | jq .[].git_url | xargs -n 1 git clone -b develop`
 
 ## Build Components
-All project using maven pom.xml files for the build lifecyle.  After cloning all repositories, switch to the `timplus-ri-build` directory and run the following command to build all components.
+All project using maven pom.xml files for the build lifecyle.  After cloning all repositories, switch to the `timplus-ri-build` directory and run the following command to build all components.  NOTE: All projects use the maven wrapper removing the need to install a specific version of maven.
 
-`mvn clean install`
+Linux:
+`./mvnw clean install`
+
+Windows:
+`mvnw clean install`
