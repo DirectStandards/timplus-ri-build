@@ -27,3 +27,15 @@ Linux:
 
 Windows:
 `mvnw clean install`
+
+## Run The TIM+ Server
+
+The TIM+ server application in contained in the timplus-server-boot project as is packaged as a Spring Boot jar application.  Once the build is successful, you can run the server copying the direct-im-server-<version>.jar file from the timplus-server-boot/target directory to some other directory and running executing a java -jar command from the "other" directory.  For example, if the name of the .jar file is direct-im-server-0.0.1-SNAPSHOT.jar, then run the following command.
+  
+`java -jar direct-im-server-0.0.1-SNAPSHOT.jar`
+
+The default configuration in the TIM+ server creates a domain name 'domain.com.'  You can access the servers configuration web app from the following location:
+
+`http://localhost:9090`
+
+The default username/password is timplus/timplus.
