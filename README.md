@@ -20,7 +20,7 @@ If you want to build from the developement branch, specify that branch using the
 `curl -s https://api.github.com/orgs/DirectStandards/repos?per_page=200 | jq .[].git_url | xargs -n 1 git clone -b develop`
 
 ## Build Components
-All project using maven pom.xml files for the build lifecyle.  After cloning all repositories, switch to the `timplus-ri-build` directory and run the following command to build all components.  NOTE: All projects use the maven wrapper removing the need to install a specific version of manen.
+All project using maven pom.xml files for the build lifecyle.  After cloning all repositories, switch to the `timplus-ri-build` directory and run the following command to build all components.  NOTE: All projects use the maven wrapper removing the need to install a specific version of maven.
 
 Linux:
 `./mvnw clean install`
