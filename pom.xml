@@ -20,6 +20,7 @@
 		<module>../timplus-server-i18n</module>
 		<module>../timplus-server-core</module>
 		<module>../timplus-server-boot</module>
+		<module>../timplus-text-client</module>		
 
 	</modules>
          
