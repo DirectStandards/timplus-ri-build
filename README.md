@@ -61,7 +61,7 @@ direct.im.domain=<domain>
 If you have not configured your _xmpp-client DNS SRV settings or want to force the client application to connect to specific server, you can add the following setting to the application.properties file:
 
 ```
-direct.im.hostip=192.168.1.128
+direct.im.hostip=<IP or Hostname>
 ```
 
 The *hostip* can either be an IP address or a server host name.  
