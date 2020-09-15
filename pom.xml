@@ -22,6 +22,7 @@
 		<module>../timplus-server-core</module>
 		<module>../timplus-server-boot</module>
 		<module>../timplus-text-client</module>		
+		<module>../timplus-client</module>			
         <module>../timplus-tools</module>	
 	</modules>
          
