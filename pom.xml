@@ -18,12 +18,14 @@
 	    <module>../timplus-common</module>	
 	    <module>../timplus-msg-monitor-model</module>
 	    <module>../timplus-msg-monitor</module>
-		<module>../timplus-server-i18n</module>
-		<module>../timplus-server-core</module>
-		<module>../timplus-server-boot</module>
-		<module>../timplus-text-client</module>		
-		<module>../timplus-client</module>			
-        <module>../timplus-tools</module>	
+	    <module>../timplus-server-i18n</module>
+	    <module>../timplus-server-core</module>
+            <module>../timplus-cluster</module>
+            <module>../timplus-cluster-redis</module>
+            <module>../timplus-cluster-scs</module>
+	    <module>../timplus-server-boot</module>
+	    <module>../timplus-text-client</module>		
+	    <module>../timplus-client</module>			
+            <module>../timplus-tools</module>	
 	</modules>
-         
 </project>
