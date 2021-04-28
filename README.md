@@ -38,32 +38,15 @@ The default configuration in the TIM+ server creates a domain name 'domain.com.'
 
 `http://localhost:9090`
 
-The default username/password is timplus/timplus.
+The default username/password is timplus@domain.com/timplus.
 
 For further instructions on deploying and configuring the TIM+ server, refer to the TIM+ server configuration [guide](https://directstandards.github.io/timplus-server-boot/). 
 
-## Run The TIM+ Text Client
-After configuring your TIM+ server with domain, certificates, and users, you can begin connecting to the server with a TIM+ compatible client application.  The TIM+ text client is spring boot command line application that allows you to connect to a server with a configured account and perform many TIM+ actions such as maintaining a contact roster, receiving presence information, sending and receiving TIM+ user to user and group messages, and sending and receiving files.  
+## Run The TIM+ Client
+After configuring your TIM+ server with domain, certificates, and users, you can begin connecting to the server with a TIM+ compatible client application.  The TIM+ client is spring boot GUI application that allows you to connect to a server with a configured account and perform many TIM+ actions such as maintaining a contact roster, receiving presence information, sending and receiving TIM+ user to user and group messages, and sending and receiving files.  
 
-Once the build is successful, you can run the client by copying the direct-text-client-<version>.jar file from the timplus-text-client/target directory to some other directory and executing a java -jar command from the "other" directory.  For example, if the name of the .jar file is timplus-text-client-1.0.0-SNAPSHOT.jar, then run the following command.
+Once the build is successful, you can run the client by copying the timplus-client-<version>.jar file from the timplus-client/target directory to some other directory and executing a java -jar command from the "other" directory.  For example, if the name of the .jar file is timplus-client-1.0.0-SNAPSHOT.jar, then run the following command.
 
-`java -jar timplus-text-client-1.0.0-SNAPSHOT.jar`
+`java -jar timplus-client-1.0.0-SNAPSHOT.jar`
 
-The application will most likely error out because it has not been configured with TIM+ account.  To configure the client application to connect with an account, create a file named *application.properties* in the same directory as the direct-text-client jar file.  Add the following content into the file replacing the value in the "<>" with your account information:
-
-```
-direct.im.username=<username>
-direct.im.password=<password>
-direct.im.domain=<domain>
-
-```
-
-If you have not configured your _xmpp-client DNS SRV settings or want to force the client application to connect to specific server, you can add the following setting to the application.properties file:
-
-```
-direct.im.hostip=<IP or Hostname>
-```
-
-The *hostip* can either be an IP address or a server host name.  
-
-After adding these setting, run the timplus client application again.  If everything is correctly configured, the application will successfully connect and authenticate to the server.
+The first time you run this application you be prompted for account configuration and login information.  You will most likely want to set the *server* configuration setting to *localhost* to connect to the server running on your local machine.
